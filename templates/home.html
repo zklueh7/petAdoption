@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Pets</h1>
+{% for pet in pets %}
+<img src="{{pet.photo_url}}">
+<p>{{pet.name}} <b>is available!</b></p>
+<a href="/add">Add pet</a>
+{% endfor %}
+{% endblock %}
